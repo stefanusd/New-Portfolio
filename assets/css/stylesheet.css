@@ -8,6 +8,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Section */
 section {
   padding: 100px 0;
 }
@@ -16,6 +18,24 @@ section {
   padding: 0 5%;
   margin: auto;
 }
+.about,
+.study,
+.skills,
+.contact,
+footer {
+  font-family: "Poppins", sans-serif;
+}
+.about .about-content,
+.study .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar */
 .navbar {
   position: fixed;
   width: 100%;
@@ -142,6 +162,8 @@ section {
   font-weight: 500;
 }
 
+/* About */
+
 /* Footer */
 footer {
   background: rgb(68, 0, 255);
@@ -155,6 +177,9 @@ footer span a {
 }
 footer span a:hover {
   text-decoration: underline;
+}
+footer i {
+  color: crimson;
 }
 
 /* responsive media query start */
@@ -210,13 +235,14 @@ footer span a:hover {
     margin: 20px 0;
     font-size: 25px;
   }
-  .home .home-content .text-2 {
-    font-size: 70px;
+  .home .content-home .text-name {
+    font-size: 60px;
+    line-height: 1.2em;
   }
-  .home .home-content .text-3 {
-    font-size: 35px;
+  .home .content-home .text-skills {
+    font-size: 30px;
   }
-  .home .home-content a {
+  .home .content-home a {
     font-size: 23px;
     padding: 10px 30px;
   }

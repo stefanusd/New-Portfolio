@@ -35,7 +35,7 @@ btn.addEventListener("click", function () {
 //   loop: true
 // });
 var typed = new Typed(".text-typing", {
-  strings: ["Web Developer", "Project Manager", "Designer", "Freelancer"],
+  strings: ["Web Developer", "Project Manager", "Designer", "Information System Student"],
   typeSpeed: 120,
   backSpeed: 60,
   loop: true,
