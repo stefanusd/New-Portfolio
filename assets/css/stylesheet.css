@@ -43,7 +43,7 @@ section {
   transition: all 0.3s ease;
 }
 .navbar a.logo span {
-  color: crimson;
+  color: blue;
   transition: all 0.3s ease;
 }
 .navbar.sticky a.logo span {
@@ -110,10 +110,11 @@ section {
 .home {
   display: flex;
   height: 100vh;
-  background: url("../image/IMG_9845.JPG") no-repeat center;
+  background-image: url("../image/IMG_9845.JPG");
   color: #000;
   min-height: 500px;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
 }
@@ -137,7 +138,7 @@ section {
   margin: 5px 0px;
 }
 .home .content-home .text-skills span {
-  color: crimson;
+  color: blue;
   font-weight: 500;
 }
 
