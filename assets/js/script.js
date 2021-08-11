@@ -1,3 +1,10 @@
+// Const Keperluan
+const btn = document.querySelector(".menu-btn");
+const menu = document.querySelector(".navbar .nav-links");
+const li = document.querySelector(".menu-btn i");
+const list = document.querySelectorAll(".menu-list");
+AOS.init();
+
 // Change Class Sticky
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
@@ -13,19 +20,20 @@ window.addEventListener("scroll", function () {
     element.classList.remove("show");
   }
 });
-window.onclick = function () {
-  document.getElementById("btn-scrl");
+var scrollup = document.getElementById("btn-scrl");
+scrollup.addEventListener("click", function () {
   document.documentElement.scrollTop = 0;
-};
-
-const btn = document.querySelector(".menu-btn");
-const menu = document.querySelector(".navbar .nav-links");
-const li = document.querySelector(".menu-btn i");
-var tombol = menu && li;
+});
 
 btn.addEventListener("click", function () {
   menu.classList.toggle("active");
   li.classList.toggle("active");
+});
+list.forEach((menulist) => {
+  menulist.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    li.classList.toggle("active");
+  });
 });
 
 // const typed = new type(".type-text", {
