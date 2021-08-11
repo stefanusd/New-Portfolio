@@ -36,12 +36,6 @@ list.forEach((menulist) => {
   });
 });
 
-// const typed = new type(".type-text", {
-//   strings = ["Web Developer", "Project Manager", "Designer"],
-//   typeSpeed: 100,
-//   backSpeed:60,
-//   loop: true
-// });
 var typed = new Typed(".text-typing", {
   strings: ["Web Developer", "Project Manager", "Designer", "Information System Student"],
   typeSpeed: 120,
